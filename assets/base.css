@@ -157,7 +157,7 @@ body {
 
 #introOne {
     position: absolute;
-    top: calc(50vh + 1em);
+    top: calc(50vh - 1rem);
     left: calc(50vw - 300pt);
 }
 
