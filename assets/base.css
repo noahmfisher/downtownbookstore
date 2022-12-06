@@ -27,7 +27,7 @@
 
 @keyframes fadeInBg {
     from {
-        opacity: 0;
+        opacity: .25;
     }
     to {
         opacity: .5;
