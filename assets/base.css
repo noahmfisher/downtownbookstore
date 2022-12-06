@@ -95,7 +95,7 @@ body {
 .logo {
     display: none;
 
-    position: absolute;
+    /* position: absolute; */
     top: calc(50vh - 150pt);
     left: calc(50vw - 350pt);
 
@@ -130,7 +130,7 @@ body {
 
 #introOne {
     position: absolute;
-    top: calc(50vh - .75em);
+    top: calc(50vh + 1em);
     left: calc(50vw - 300pt);
 }
 
