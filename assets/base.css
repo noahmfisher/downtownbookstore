@@ -96,8 +96,8 @@ body {
     display: none;
 
     /* position: absolute; */
-    top: calc(50vh - 150pt);
-    left: calc(50vw - 350pt);
+    /* top: calc(50vh - 150pt);
+    left: calc(50vw - 350pt); */
 
     animation: logoDrop 1s ease-out;
 
