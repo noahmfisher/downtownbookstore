@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "chatbold";
+    src: url('https://cdn.shopify.com/s/files/1/0654/0574/7429/files/chatbold.woff2?v=1668475791');
+}
+
+@keyframes logoDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-50pt);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50pt);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .5;
+    }
+}
+
+@keyframes fadeInBgTwo {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: .75;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: "chatbold";
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.bg {
+    display: none;
+    width: 104vw;
+    height: 104vh;
+
+    position: absolute;
+    top: -2vh;
+    left: -2vw;
+
+    z-index: -100;
+
+    animation: fadeInBg 1s forwards;
+    
+
+    background-image: url("https://cdn.shopify.com/s/files/1/0679/6640/2860/files/Homepage3D.jpg?v=1670285530");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.bgTwo {
+    animation: fadeInBgTwo 1s forwards;
+}
+
+.logo {
+    display: none;
+
+    position: absolute;
+    top: calc(50vh - 150pt);
+    left: calc(50vw - 350pt);
+
+    animation: logoDrop 1s ease-out;
+
+    background-image: url("logo.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 80vw;
+    max-width: 700pt;
+    height: 300pt;
+}
+
+.animated {
+    -webkit-transition: all 1s ease-out;  
+    -moz-transition: all 1s ease-out;  
+    -o-transition: all 1s ease-out;  
+    -ms-transition: all 1s ease-out;  
+    transition: all 1s ease-out;
+}
+
+.text {
+    width: 600pt;
+    text-align: center;
+
+    color: orange;
+    font-size: 1.5em;
+    text-shadow: 2px 2px black;
+}
+
+#introOne {
+    position: absolute;
+    top: calc(50vh - .75em);
+    left: calc(50vw - 300pt);
+}
+
+#clickOne {
+    display: inline-block;
+}
+
+#clickTwo {
+    display: none;
+}
+
+#clickThree {
+    z-index: 10000;
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#introTwo {
+    display: none;
+    position: absolute;
+    top: calc(50vh - .75em);
+    left: calc(50vw - 300pt);
+}
+
+#introThree {
+    animation: fadeIn 1s ease-out;
+    position: absolute;
+    display: none;
+    top: calc(50vh + 60pt);
+    left: calc(50vw - 300pt);
+}
+
+#button {
+    position: absolute;
+    bottom: 0;
+}
+
+.click {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.continue {
+    color: white;
+    font-size: .75em;
+}
