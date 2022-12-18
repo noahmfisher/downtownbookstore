@@ -27,7 +27,7 @@
 
 @keyframes fadeInBg {
     from {
-        opacity: .25;
+        opacity: 0;
     }
     to {
         opacity: .5;
@@ -95,14 +95,14 @@ body {
 .logo {
     display: none;
 
-    /* position: absolute; */
-    /* top: calc(50vh - 150pt);
-    left: calc(50vw - 350pt); */
+    position: absolute;
+    top: calc(50vh - 150pt);
+    left: calc(50vw - 350pt);
 
     animation: logoDrop 1s ease-out;
 
-    background-image: url("logoopt.png");
-    background-size:contain;
+    background-image: url("logo.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -110,33 +110,6 @@ body {
     max-width: 700pt;
     height: 300pt;
 }
-
-@media only screen and (min-width: 768px) {
-    .logo { 
-        background-image: url("logoopt.png");
-        
-        width: 80vw;
-        max-width: 700pt;
-        height: 300pt;
-    }
-
-    #introThree {
-        top: calc(50vh + 60pt);
-    }
-}
-@media only screen and (max-width: 768px) {
-    .logo { 
-        background-image: url("mobilelogoopt.png");
-        width: 95vw;
-        max-width: 750pt;
-        height: 300pt;
-    }
-
-    #introThree {
-        top: calc(50vh + 30pt);
-    }
-}
-
 
 .animated {
     -webkit-transition: all 1s ease-out;  
@@ -157,7 +130,7 @@ body {
 
 #introOne {
     position: absolute;
-    top: calc(50vh - 1rem);
+    top: calc(50vh - .75em);
     left: calc(50vw - 300pt);
 }
 
@@ -191,6 +164,7 @@ body {
     animation: fadeIn 1s ease-out;
     position: absolute;
     display: none;
+    top: calc(50vh + 60pt);
     left: calc(50vw - 300pt);
 }
 
@@ -208,5 +182,4 @@ body {
 
 .continue {
     color: white;
-    font-size: .75em;
 }
